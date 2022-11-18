@@ -1,5 +1,5 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { CompanyUpdateDto } from './companies'
+import { CompanyReadDto, CompanyUpdateDto } from './companies'
 
 export class WorkParamCreateDto {
 	name: string
@@ -10,4 +10,5 @@ export class WorkParamUpdateDto extends PartialType(WorkParamCreateDto) {}
 
 export class WorkParamReadDto extends WorkParamCreateDto {
 	id: number
+	company: CompanyReadDto
 }

@@ -12,4 +12,5 @@ export class JurpersonUpdateDto extends PartialType(JurpersonCreateDto) {}
 
 export class JurpersonReadDto extends JurpersonCreateDto {
 	id: number
+	company: CompanyReadDto
 }

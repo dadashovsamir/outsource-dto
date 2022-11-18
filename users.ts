@@ -1,5 +1,5 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { RoleUpdateDto } from './roles'
+import { RoleReadDto, RoleUpdateDto } from './roles'
 
 export class UserCreateDto {
 	name: string
@@ -13,4 +13,5 @@ export class UserUpdateDto extends PartialType(UserCreateDto) {}
 
 export class UserReadDto extends UserCreateDto {
 	id: number
+	roles: RoleReadDto[]
 }

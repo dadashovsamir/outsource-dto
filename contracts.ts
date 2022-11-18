@@ -1,6 +1,9 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { CounterpartyJurpersonUpdateDto } from './counterparty-jurpersons'
-import { JurpersonUpdateDto } from './jurpersons'
+import {
+	CounterpartyJurpersonReadDto,
+	CounterpartyJurpersonUpdateDto
+} from './counterparty-jurpersons'
+import { JurpersonReadDto, JurpersonUpdateDto } from './jurpersons'
 
 export class ContractCreateDto {
 	name: string
@@ -13,4 +16,6 @@ export class ContractUpdateDto extends PartialType(ContractCreateDto) {}
 
 export class ContractReadDto extends ContractCreateDto {
 	id: number
+	jurperson: JurpersonReadDto
+	counterpartyJurperson: CounterpartyJurpersonReadDto
 }

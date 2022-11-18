@@ -1,6 +1,6 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { UnitUpdateDto } from './units'
-import { WorkParamUpdateDto } from './work-params'
+import { UnitReadDto, UnitUpdateDto } from './units'
+import { WorkParamReadDto, WorkParamUpdateDto } from './work-params'
 
 export class WorkerCreateDto {
 	name: string
@@ -19,4 +19,6 @@ export class WorkerUpdateDto extends PartialType(WorkerCreateDto) {}
 
 export class WorkerReadDto extends WorkerCreateDto {
 	id: number
+	workParams: WorkParamReadDto[]
+	unit: UnitReadDto
 }

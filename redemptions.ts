@@ -1,8 +1,14 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { CounterpartyUnitUpdateDto } from './counterparty-units'
-import { PositionUpdateDto } from './positions'
-import { RedemptionTypeUpdateDto } from './redemption-types'
-import { WorkerUpdateDto } from './workers'
+import {
+	CounterpartyUnitReadDto,
+	CounterpartyUnitUpdateDto
+} from './counterparty-units'
+import { PositionReadDto, PositionUpdateDto } from './positions'
+import {
+	RedemptionTypeReadDto,
+	RedemptionTypeUpdateDto
+} from './redemption-types'
+import { WorkerReadDto, WorkerUpdateDto } from './workers'
 
 export class RedemptionCreateDto {
 	amount: number
@@ -18,4 +24,8 @@ export class RedemptionUpdateDto extends PartialType(RedemptionCreateDto) {}
 
 export class RedemptionReadDto extends RedemptionCreateDto {
 	id: number
+	redemptionType: RedemptionTypeReadDto
+	worker: WorkerReadDto
+	position: PositionReadDto
+	counterpartyUnit: CounterpartyUnitReadDto
 }

@@ -1,7 +1,10 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { CounterpartyUnitUpdateDto } from './counterparty-units'
-import { PositionUpdateDto } from './positions'
-import { WorkerUpdateDto } from './workers'
+import {
+	CounterpartyUnitReadDto,
+	CounterpartyUnitUpdateDto
+} from './counterparty-units'
+import { PositionReadDto, PositionUpdateDto } from './positions'
+import { WorkerReadDto, WorkerUpdateDto } from './workers'
 
 export class AttendanceCreateDto {
 	amount: number
@@ -15,4 +18,7 @@ export class AttendanceUpdateDto extends PartialType(AttendanceCreateDto) {}
 
 export class AttendanceReadDto extends AttendanceCreateDto {
 	id: number
+	worker: WorkerReadDto
+	position: PositionReadDto
+	counterpartyUnit: CounterpartyUnitReadDto
 }

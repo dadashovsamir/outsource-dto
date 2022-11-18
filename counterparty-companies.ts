@@ -1,5 +1,5 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { CompanyUpdateDto } from './companies'
+import { CompanyReadDto, CompanyUpdateDto } from './companies'
 
 export class CounterpartyCompanyCreateDto {
 	name: string
@@ -12,4 +12,5 @@ export class CounterpartyCompanyUpdateDto extends PartialType(
 
 export class CounterpartyCompanyReadDto extends CounterpartyCompanyCreateDto {
 	id: number
+	company: CompanyReadDto
 }
