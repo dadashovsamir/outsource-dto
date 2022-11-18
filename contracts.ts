@@ -10,3 +10,7 @@ export class ContractCreateDto {
 }
 
 export class ContractUpdateDto extends PartialType(ContractCreateDto) {}
+
+export class ContractReadDto extends ContractCreateDto {
+	id: number
+}

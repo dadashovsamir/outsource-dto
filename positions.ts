@@ -15,3 +15,7 @@ export class PositionCreateDto {
 }
 
 export class PositionUpdateDto extends PartialType(PositionCreateDto) {}
+
+export class PositionReadDto extends PositionCreateDto {
+	id: number
+}

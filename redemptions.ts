@@ -15,3 +15,7 @@ export class RedemptionCreateDto {
 }
 
 export class RedemptionUpdateDto extends PartialType(RedemptionCreateDto) {}
+
+export class RedemptionReadDto extends RedemptionCreateDto {
+	id: number
+}

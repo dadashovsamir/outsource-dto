@@ -10,3 +10,6 @@ export class CounterpartyUnitCreateDto {
 export class CounterpartyUnitUpdateDto extends PartialType(
 	CounterpartyUnitCreateDto
 ) {}
+export class CounterpartyUnitReadDto extends CounterpartyUnitCreateDto {
+	id: number
+}

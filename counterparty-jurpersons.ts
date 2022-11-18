@@ -11,3 +11,7 @@ export class CounterpartyJurpersonCreateDto {
 export class CounterpartyJurpersonUpdateDto extends PartialType(
 	CounterpartyJurpersonCreateDto
 ) {}
+
+export class CounterpartyJurpersonReadDto extends CounterpartyJurpersonCreateDto {
+	id: number
+}

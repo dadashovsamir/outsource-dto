@@ -7,3 +7,7 @@ export class WorkParamCreateDto {
 }
 
 export class WorkParamUpdateDto extends PartialType(WorkParamCreateDto) {}
+
+export class WorkParamReadDto extends WorkParamCreateDto {
+	id: number
+}

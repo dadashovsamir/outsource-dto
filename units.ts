@@ -8,3 +8,7 @@ export class UnitCreateDto {
 }
 
 export class UnitUpdateDto extends PartialType(UnitCreateDto) {}
+
+export class UnitReadDto extends UnitCreateDto {
+	id: number
+}

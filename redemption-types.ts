@@ -9,3 +9,7 @@ export class RedemptionTypeCreateDto {
 export class RedemptionTypeUpdateDto extends PartialType(
 	RedemptionTypeCreateDto
 ) {}
+
+export class RedemptionTypeReadDto extends RedemptionTypeCreateDto {
+	id: number
+}

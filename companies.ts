@@ -5,3 +5,7 @@ export class CompanyCreateDto {
 }
 
 export class CompanyUpdateDto extends PartialType(CompanyCreateDto) {}
+
+export class CompanyReadDto extends CompanyCreateDto {
+	id: number
+}

@@ -5,3 +5,7 @@ export class RoleCreateDto {
 }
 
 export class RoleUpdateDto extends PartialType(RoleCreateDto) {}
+
+export class RoleReadDto extends RoleCreateDto {
+	id: number
+}

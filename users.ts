@@ -10,3 +10,7 @@ export class UserCreateDto {
 }
 
 export class UserUpdateDto extends PartialType(UserCreateDto) {}
+
+export class UserReadDto extends UserCreateDto {
+	id: number
+}

@@ -16,3 +16,7 @@ export class WorkerCreateDto {
 }
 
 export class WorkerUpdateDto extends PartialType(WorkerCreateDto) {}
+
+export class WorkerReadDto extends WorkerCreateDto {
+	id: number
+}

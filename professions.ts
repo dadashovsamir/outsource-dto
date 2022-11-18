@@ -7,3 +7,7 @@ export class ProfessionCreateDto {
 }
 
 export class ProfessionUpdateDto extends PartialType(ProfessionCreateDto) {}
+
+export class ProfessionReadDto extends ProfessionCreateDto {
+	number: id
+}

@@ -9,3 +9,7 @@ export class CounterpartyCompanyCreateDto {
 export class CounterpartyCompanyUpdateDto extends PartialType(
 	CounterpartyCompanyCreateDto
 ) {}
+
+export class CounterpartyCompanyReadDto extends CounterpartyCompanyCreateDto {
+	id: number
+}

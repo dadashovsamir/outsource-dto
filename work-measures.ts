@@ -8,3 +8,7 @@ export class WorkMeasureCreateDto {
 }
 
 export class WorkMeasureUpdateDto extends PartialType(WorkMeasureCreateDto) {}
+
+export class WorkMeasureReadDto extends WorkMeasureCreateDto {
+	id: number
+}

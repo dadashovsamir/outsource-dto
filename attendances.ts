@@ -12,3 +12,7 @@ export class AttendanceCreateDto {
 }
 
 export class AttendanceUpdateDto extends PartialType(AttendanceCreateDto) {}
+
+export class AttendanceReadDto extends AttendanceCreateDto {
+	id: number
+}
