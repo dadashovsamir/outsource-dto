@@ -4,8 +4,5 @@ export class JurpersonCreateDto {
 	name: string = ''
 	address: string = ''
 	bankDetails: string = ''
-	company: CompanyReadDto | { id: number }
-	constructor(company: CompanyReadDto) {
-		this.company = company
-	}
+	company: CompanyReadDto | { id: number } = { id: 0 }
 }
