@@ -1,7 +1,7 @@
 import { CompanyReadDto } from './companies-read'
 
 export class UnitCreateDto {
-	name: string
-	address: string
+	name = ''
+	address = ''
 	company: CompanyReadDto | { id: number }
 }

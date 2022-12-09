@@ -4,7 +4,7 @@ import { UnitReadDto } from './units-read'
 import { UserCreateDto } from './users-create'
 
 export class UserReadDto extends UserCreateDto {
-	id: number
+	id = 0
 	companies: CompanyReadDto[]
 	units: UnitReadDto[]
 	roles: RoleReadDto[]

@@ -4,7 +4,7 @@ import { PositionReadDto } from './positions-read'
 import { WorkerReadDto } from './workers-read'
 
 export class AttendanceReadDto extends AttendanceCreateDto {
-	id: number
+	id = 0
 	worker: WorkerReadDto
 	position: PositionReadDto
 	counterpartyUnit: CounterpartyUnitReadDto

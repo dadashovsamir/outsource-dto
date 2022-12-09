@@ -5,7 +5,7 @@ import { RedemptionCreateDto } from './redemptions-create'
 import { WorkerReadDto } from './workers-read'
 
 export class RedemptionReadDto extends RedemptionCreateDto {
-	id: number
+	id = 0
 	redemptionType: RedemptionTypeReadDto
 	worker: WorkerReadDto
 	position: PositionReadDto

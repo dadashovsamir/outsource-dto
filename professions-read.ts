@@ -2,6 +2,10 @@ import { CompanyReadDto } from './companies-read'
 import { ProfessionCreateDto } from './professions-create'
 
 export class ProfessionReadDto extends ProfessionCreateDto {
-	id: number
+	id = 0
 	company: CompanyReadDto
+	constructor(company: CompanyReadDto) {
+		super()
+		this.company = company
+	}
 }

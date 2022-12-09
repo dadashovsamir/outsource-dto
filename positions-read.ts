@@ -5,9 +5,13 @@ import { WorkMeasureReadDto } from './work-measures-read'
 import { WorkParamReadDto } from './work-params-read'
 
 export class PositionReadDto extends PositionCreateDto {
-	id: number
+	id = 0
 	profession: ProfessionReadDto
 	workMeasure: WorkMeasureReadDto
-	contract: ContractReadDto
 	workParams: WorkParamReadDto[]
+	contract: ContractReadDto
+	constructor(contract: ContractReadDto) {
+		super()
+		this.contract = contract
+	}
 }

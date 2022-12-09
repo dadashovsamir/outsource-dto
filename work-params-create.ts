@@ -1,6 +1,6 @@
 import { CompanyReadDto } from './companies-read'
 
 export class WorkParamCreateDto {
-	name: string
+	name = ''
 	company: CompanyReadDto | { id: number }
 }

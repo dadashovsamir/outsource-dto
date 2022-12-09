@@ -1,6 +1,6 @@
-import { CompanyCreateDto } from './companies-create'
+import { CompanyReadDto } from './companies-read'
 
 export class ProfessionCreateDto {
-	name: string
-	company: CompanyCreateDto | { id: number }
+	name: string = ''
+	company: CompanyReadDto | { id: number }
 }

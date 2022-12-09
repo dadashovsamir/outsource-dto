@@ -1,3 +1,3 @@
 export class CompanyCreateDto {
-	name: string
+	name: string = ''
 }

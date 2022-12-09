@@ -1,7 +1,7 @@
 import { CompanyReadDto } from './companies-read'
 
 export class WorkMeasureCreateDto {
-	shortName: string
-	fullName: string
+	shortName = ''
+	fullName = ''
 	company: CompanyReadDto | { id: number }
 }
