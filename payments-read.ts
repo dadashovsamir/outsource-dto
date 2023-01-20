@@ -13,8 +13,6 @@ export class PaymentReadDto extends PaymentCreateDto {
 	counterpartyUnit: CounterpartyUnitReadDto
 	constructor(worker: WorkerReadDto) {
 		super()
-		this.date = new Date()
-		this.period = new Date()
 		this.worker = worker
 	}
 }
