@@ -1,5 +1,5 @@
 import { CounterpartyUnitReadDto } from './counterparty-units-read';
-import { PositionReadDto } from './positions-read';
+import { PositionReadDto } from './counterparty-unit-positions-read';
 import { RedemptionTypeReadDto } from './redemption-types-read';
 import { WorkerReadDto } from './workers-read';
 
