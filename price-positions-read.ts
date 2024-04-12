@@ -4,12 +4,12 @@ import { CounterpartyUnitPositionReadDto } from './counterparty-unit-positions-r
 import { WorkMeasureReadDto } from './work-measures-read'
 
 export class PricePositionReadDto extends PricePositionCreateDto {
-  id = 0
-  workMeasure: WorkMeasureReadDto
-  price: PriceReadDto
-  counterpartyUnitPosition: CounterpartyUnitPositionReadDto
-  constructor(price: PriceReadDto) {
-    super()
-    this.price = price
-  }
+	id = 0
+	workMeasure: WorkMeasureReadDto
+	price: PriceReadDto
+	counterpartyUnitPosition: CounterpartyUnitPositionReadDto
+	constructor(price: PriceReadDto) {
+		super()
+		this.price = price
+	}
 }

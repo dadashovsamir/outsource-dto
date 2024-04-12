@@ -1,6 +1,6 @@
-import { CompanyReadDto } from './companies-read';
+import { CompanyReadDto } from './companies-read'
 
 export class PaymentTypeCreateDto {
-  name = '';
-  company: CompanyReadDto | { id: number };
+	name = ''
+	company: CompanyReadDto | { id: number }
 }
