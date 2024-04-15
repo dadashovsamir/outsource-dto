@@ -1,8 +1,8 @@
-import { CounterpartyUnitPositionCreateDto } from './counterparty-unit-positions-create'
+import { UnitPositionCreateDto } from './unit-positions-create'
 import { CounterpartyUnitReadDto } from './counterparty-units-read'
 import { ProfessionReadDto } from './professions-read'
 
-export class CounterpartyUnitPositionReadDto extends CounterpartyUnitPositionCreateDto {
+export class UnitPositionReadDto extends UnitPositionCreateDto {
 	id = 0
 	profession: ProfessionReadDto
 	counterpartyUnit: CounterpartyUnitReadDto | { id: number }

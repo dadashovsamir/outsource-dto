@@ -1,4 +1,4 @@
-import { CounterpartyUnitPositionReadDto } from './counterparty-unit-positions-read'
+import { UnitPositionReadDto } from './unit-positions-read'
 import { RedemptionTypeReadDto } from './redemption-types-read'
 import { WorkerReadDto } from './workers-read'
 
@@ -8,6 +8,6 @@ export class RedemptionCreateDto {
 	period: Date
 	redemptionType: RedemptionTypeReadDto | { id: number }
 	worker: WorkerReadDto | { id: number }
-	position: CounterpartyUnitPositionReadDto | { id: number }
+	position: UnitPositionReadDto | { id: number }
 	comment = ''
 }
