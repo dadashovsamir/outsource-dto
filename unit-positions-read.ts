@@ -6,7 +6,7 @@ export class UnitPositionReadDto extends UnitPositionCreateDto {
 	id = 0
 	profession: ProfessionReadDto
 	counterpartyUnit: CounterpartyUnitReadDto | { id: number }
-	constructor(counterpartyUnit: CounterpartyUnitReadDto) {
+	constructor(counterpartyUnit: CounterpartyUnitReadDto | { id: number }) {
 		super()
 		this.counterpartyUnit = counterpartyUnit
 	}
