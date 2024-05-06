@@ -4,9 +4,9 @@ import { WorkerCreateDto } from './workers-create'
 
 export class WorkerReadDto extends WorkerCreateDto {
 	id = 0
-	unit: UnitReadDto
+	unit: UnitReadDto | { id: number }
 	workParams: WorkParamReadDto[]
-	constructor(unit: UnitReadDto) {
+	constructor(unit: UnitReadDto | { id: number }) {
 		super()
 		this.unit = unit
 	}

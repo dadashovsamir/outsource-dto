@@ -4,8 +4,9 @@ import { UnitReadDto } from './units-read'
 
 export class PriceReadDto extends PriceCreateDto {
 	id = 0
+	unit: UnitReadDto | { id: number }
 	jurperson: JurpersonReadDto
-	constructor(unit: UnitReadDto) {
+	constructor(unit: UnitReadDto | { id: number }) {
 		super()
 		this.unit = unit
 	}

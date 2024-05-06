@@ -1,7 +1,7 @@
-import { CounterpartyCompanyReadDto } from './counterparty-companies-read'
+import { CounterpartyJurpersonReadDto } from './counterparty-jurpersons-read'
 
 export class CounterpartyUnitCreateDto {
 	name: string
 	address: string
-	counterpartyCompany: CounterpartyCompanyReadDto | { id: number }
+	counterpartyJurperson: CounterpartyJurpersonReadDto | { id: number }
 }

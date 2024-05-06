@@ -1,11 +1,13 @@
-import { CounterpartyCompanyReadDto } from './counterparty-companies-read'
+import { CounterpartyJurpersonReadDto } from './counterparty-jurpersons-read'
 import { CounterpartyUnitCreateDto } from './counterparty-units-create'
 
 export class CounterpartyUnitReadDto extends CounterpartyUnitCreateDto {
 	id = 0
-	counterpartyCompany: CounterpartyCompanyReadDto
-	constructor(counterpartyCompany: CounterpartyCompanyReadDto) {
+	counterpartyJurperson: CounterpartyJurpersonReadDto | { id: number }
+	constructor(
+		counterpartyJurperson: CounterpartyJurpersonReadDto | { id: number }
+	) {
 		super()
-		this.counterpartyCompany = counterpartyCompany
+		this.counterpartyJurperson = counterpartyJurperson
 	}
 }
