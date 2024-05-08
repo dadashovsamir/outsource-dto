@@ -1,13 +1,13 @@
 import { PriceCreateDto } from './prices-create'
 import { JurpersonReadDto } from './jurpersons-read'
-import { UnitReadDto } from './units-read'
+import { CounterpartyUnitReadDto } from './counterparty-units-read'
 
 export class PriceReadDto extends PriceCreateDto {
 	id = 0
-	unit: UnitReadDto | { id: number }
+	counterpartyUnit: CounterpartyUnitReadDto | { id: number }
 	jurperson: JurpersonReadDto
-	constructor(unit: UnitReadDto | { id: number }) {
+	constructor(counterpartyUnit: CounterpartyUnitReadDto | { id: number }) {
 		super()
-		this.unit = unit
+		this.counterpartyUnit = counterpartyUnit
 	}
 }
