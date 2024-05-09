@@ -6,9 +6,9 @@ import { WorkMeasureReadDto } from './work-measures-read'
 export class PricePositionReadDto extends PricePositionCreateDto {
 	id = 0
 	workMeasure: WorkMeasureReadDto
-	price: PriceReadDto
+	price: PriceReadDto | { id: number }
 	unitPosition: UnitPositionReadDto
-	constructor(price: PriceReadDto) {
+	constructor(price: PriceReadDto | { id: number }) {
 		super()
 		this.price = price
 	}
