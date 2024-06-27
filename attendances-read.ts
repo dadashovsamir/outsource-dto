@@ -6,6 +6,6 @@ import { WorkerReadDto } from './workers-read'
 export class AttendanceReadDto extends AttendanceCreateDto {
 	id = 0
 	worker: WorkerReadDto
-	position: PricePositionReadDto
+	pricePosition: PricePositionReadDto
 	counterpartyUnit: CounterpartyUnitReadDto
 }

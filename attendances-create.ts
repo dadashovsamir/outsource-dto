@@ -6,6 +6,6 @@ export class AttendanceCreateDto {
 	amount: number
 	date: Date
 	worker: WorkerReadDto | { id: number }
-	position: PricePositionReadDto | { id: number }
+	pricePosition: PricePositionReadDto | { id: number }
 	counterpartyUnit: CounterpartyUnitReadDto | { id: number }
 }
