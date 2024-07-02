@@ -4,7 +4,7 @@ import { WorkerReadDto } from './workers-read'
 
 export class AttendanceCreateDto {
 	amount: number
-	date: Date
+	date: Date = new Date()
 	worker: WorkerReadDto | { id: number }
 	pricePosition: PricePositionReadDto | { id: number }
 	counterpartyUnit: CounterpartyUnitReadDto | { id: number }
