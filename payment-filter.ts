@@ -1,3 +1,4 @@
+import { PaymentTypeReadDto } from './payment-types-read'
 import { WorkParamReadDto } from './work-params-read'
 import { WorkerReadDto } from './workers-read'
 
@@ -10,4 +11,5 @@ export class PaymentFilterDto {
 	workParamsRecipient: WorkParamReadDto[] | { id: number }[] = []
 	payer: WorkerReadDto[] | { id: number }[] = []
 	recipient: WorkerReadDto[] | { id: number }[] = []
+	paymentType: PaymentTypeReadDto[] | { id: number }[] = []
 }
