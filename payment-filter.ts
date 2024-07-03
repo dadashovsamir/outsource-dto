@@ -8,6 +8,6 @@ export class PaymentFilterDto {
 	periodEnd: string
 	workParamsPayer: WorkParamReadDto[] | { id: number }[] = []
 	workParamsRecipient: WorkParamReadDto[] | { id: number }[] = []
-	payers: WorkerReadDto[] | { id: number }[] = []
-	recipients: WorkerReadDto[] | { id: number }[] = []
+	payer: WorkerReadDto[] | { id: number }[] = []
+	recipient: WorkerReadDto[] | { id: number }[] = []
 }
