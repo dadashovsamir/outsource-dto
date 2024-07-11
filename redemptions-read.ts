@@ -8,4 +8,8 @@ export class RedemptionReadDto extends RedemptionCreateDto {
 	redemptionType: RedemptionTypeReadDto
 	worker: WorkerReadDto
 	position: UnitPositionReadDto
+	constructor(initialData?: Partial<RedemptionReadDto>) {
+		super()
+		Object.assign(this, initialData)
+	}
 }

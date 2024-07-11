@@ -4,8 +4,8 @@ import { WorkMeasureCreateDto } from './work-measures-create'
 export class WorkMeasureReadDto extends WorkMeasureCreateDto {
 	id = 0
 	company: CompanyReadDto | { id: number }
-	constructor(company: CompanyReadDto | { id: number }) {
+	constructor(initialData?: Partial<WorkMeasureReadDto>) {
 		super()
-		this.company = company
+		Object.assign(this, initialData)
 	}
 }

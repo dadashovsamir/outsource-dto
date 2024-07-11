@@ -8,8 +8,8 @@ export class PricePositionReadDto extends PricePositionCreateDto {
 	workMeasure: WorkMeasureReadDto
 	price: PriceReadDto | { id: number }
 	unitPosition: UnitPositionReadDto
-	constructor(price: PriceReadDto | { id: number }) {
+	constructor(initialData?: Partial<PricePositionReadDto>) {
 		super()
-		this.price = price
+		Object.assign(this, initialData)
 	}
 }

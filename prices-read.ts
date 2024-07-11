@@ -6,8 +6,8 @@ export class PriceReadDto extends PriceCreateDto {
 	id = 0
 	counterpartyUnit: CounterpartyUnitReadDto | { id: number }
 	jurperson: JurpersonReadDto
-	constructor(counterpartyUnit: CounterpartyUnitReadDto | { id: number }) {
+	constructor(initialData?: Partial<PriceReadDto>) {
 		super()
-		this.counterpartyUnit = counterpartyUnit
+		Object.assign(this, initialData)
 	}
 }

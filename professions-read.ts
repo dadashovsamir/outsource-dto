@@ -4,8 +4,8 @@ import { ProfessionCreateDto } from './professions-create'
 export class ProfessionReadDto extends ProfessionCreateDto {
 	id = 0
 	company: CompanyReadDto | { id: number }
-	constructor(company: CompanyReadDto | { id: number }) {
+	constructor(initialData?: Partial<ProfessionReadDto>) {
 		super()
-		this.company = company
+		Object.assign(this, initialData)
 	}
 }
