@@ -8,4 +8,8 @@ export class UserReadDto extends UserCreateDto {
 	companies: CompanyReadDto[]
 	units: UnitReadDto[]
 	roles: RoleReadDto[]
+	constructor(initialData?: Partial<UserReadDto>) {
+		super()
+		Object.assign(this, initialData)
+	}
 }

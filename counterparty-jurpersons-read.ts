@@ -4,10 +4,8 @@ import { CounterpartyJurpersonCreateDto } from './counterparty-jurpersons-create
 export class CounterpartyJurpersonReadDto extends CounterpartyJurpersonCreateDto {
 	id = 0
 	counterpartyCompany: CounterpartyCompanyReadDto | { id: number }
-	constructor(
-		counterpartyCompany: CounterpartyCompanyReadDto | { id: number }
-	) {
+	constructor(initialData?: Partial<CounterpartyJurpersonReadDto>) {
 		super()
-		this.counterpartyCompany = counterpartyCompany
+		Object.assign(this, initialData)
 	}
 }

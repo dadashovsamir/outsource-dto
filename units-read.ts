@@ -4,8 +4,8 @@ import { UnitCreateDto } from './units-create'
 export class UnitReadDto extends UnitCreateDto {
 	id = 0
 	company: CompanyReadDto | { id: number }
-	constructor(company: CompanyReadDto | { id: number }) {
+	constructor(initialData?: Partial<UnitReadDto>) {
 		super()
-		this.company = company
+		Object.assign(this, initialData)
 	}
 }
