@@ -2,8 +2,8 @@ import { CounterpartyCompanyReadDto } from './counterparty-companies-read'
 import { CounterpartyJurpersonReadDto } from './counterparty-jurpersons-read'
 import { CounterpartyUnitReadDto } from './counterparty-units-read'
 import { JurpersonReadDto } from './jurpersons-read'
-import { PricePositionReadDto } from './price-positions-read'
 import { RedemptionTypeReadDto } from './redemption-types-read'
+import { UnitPositionReadDto } from './unit-positions-read'
 import { WorkParamReadDto } from './work-params-read'
 import { WorkerReadDto } from './workers-read'
 
@@ -19,5 +19,5 @@ export class RedemptionFilterDto {
 	counterpartyUnit: CounterpartyUnitReadDto[] | { id: number }[] = []
 	jurperson: JurpersonReadDto[] | { id: number }[] = []
 	redemptionType: RedemptionTypeReadDto[] | { id: number }[] = []
-	pricePosition: PricePositionReadDto[] = []
+	unitPosition: UnitPositionReadDto[] = []
 }
