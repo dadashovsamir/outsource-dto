@@ -4,7 +4,7 @@ import { WorkParamReadDto } from './work-params-read'
 export class WorkerCreateDto {
 	name = ''
 	phone = ''
-	birthday = new Date()
+	birthday = new Date('1900-01-01')
 	addressResidence = ''
 	addressRegistration = ''
 	passport = ''

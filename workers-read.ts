@@ -5,7 +5,7 @@ import { WorkerCreateDto } from './workers-create'
 export class WorkerReadDto extends WorkerCreateDto {
 	id = 0
 	unit: UnitReadDto | { id: number }
-	workParams: WorkParamReadDto[]
+	workParams: WorkParamReadDto[] = []
 	constructor(initialData?: Partial<WorkerReadDto>) {
 		super()
 		Object.assign(this, initialData)
