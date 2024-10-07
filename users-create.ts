@@ -7,7 +7,7 @@ export class UserCreateDto {
 	email: string
 	password: string
 	isActive: boolean
-	companies: CompanyReadDto[] | { id: number }[]
+	company: CompanyReadDto | { id: number }
 	units: UnitReadDto[] | { id: number }[]
 	roles: RoleReadDto[] | { id: number }[]
 }
