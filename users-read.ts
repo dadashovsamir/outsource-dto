@@ -5,7 +5,7 @@ import { UserCreateDto } from './users-create'
 
 export class UserReadDto extends UserCreateDto {
 	id = 0
-	company: CompanyReadDto
+	companies: CompanyReadDto[]
 	units: UnitReadDto[]
 	roles: RoleReadDto[]
 	constructor(initialData?: Partial<UserReadDto>) {
