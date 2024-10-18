@@ -4,7 +4,7 @@ import { CounterpartyUnitReadDto } from './counterparty-units-read'
 
 export class PriceReadDto extends PriceCreateDto {
 	id = 0
-	counterpartyUnit: CounterpartyUnitReadDto | { id: number }
+	counterpartyUnit: CounterpartyUnitReadDto
 	jurperson: JurpersonReadDto
 	constructor(initialData?: Partial<PriceReadDto>) {
 		super()

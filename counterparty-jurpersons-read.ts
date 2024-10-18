@@ -3,7 +3,7 @@ import { CounterpartyJurpersonCreateDto } from './counterparty-jurpersons-create
 
 export class CounterpartyJurpersonReadDto extends CounterpartyJurpersonCreateDto {
 	id = 0
-	counterpartyCompany: CounterpartyCompanyReadDto | { id: number }
+	counterpartyCompany: CounterpartyCompanyReadDto
 	constructor(initialData?: Partial<CounterpartyJurpersonReadDto>) {
 		super()
 		Object.assign(this, initialData)
