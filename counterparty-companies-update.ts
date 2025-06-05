@@ -1,7 +1,7 @@
 import { PartialType } from '@nestjs/mapped-types'
 
-import { CounterpartyCompanyCreateDto } from './counterparty-companies-create'
+import { ClientCompanyCreateDto } from './client-companies-create'
 
-export class CounterpartyCompanyUpdateDto extends PartialType(
-	CounterpartyCompanyCreateDto,
+export class ClientCompanyUpdateDto extends PartialType(
+	ClientCompanyCreateDto,
 ) {}

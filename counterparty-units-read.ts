@@ -1,10 +1,10 @@
 import { UnitGroupReadDto } from './unit-groups-read'
-import { CounterpartyUnitCreateDto } from './counterparty-units-create'
+import { ClientUnitCreateDto } from './client-units-create'
 
-export class CounterpartyUnitReadDto extends CounterpartyUnitCreateDto {
+export class ClientUnitReadDto extends ClientUnitCreateDto {
 	id = 0
 	unitGroup?: UnitGroupReadDto | null
-	constructor(initialData?: Partial<CounterpartyUnitReadDto>) {
+	constructor(initialData?: Partial<ClientUnitReadDto>) {
 		super()
 		Object.assign(this, initialData)
 	}

@@ -1,5 +1,5 @@
 import { RedemptionCreateDto } from './redemptions-create'
-import { CounterpartyUnitReadDto } from './counterparty-units-read'
+import { ClientUnitReadDto } from './client-units-read'
 import { PricePositionReadDto } from './price-positions-read'
 import { WorkerReadDto } from './workers-read'
 
@@ -9,7 +9,7 @@ export class RedemptionReadDto extends RedemptionCreateDto {
 	period: Date = new Date()
 	worker: WorkerReadDto
 	pricePosition: PricePositionReadDto
-	counterpartyUnit: CounterpartyUnitReadDto
+	clientUnit: ClientUnitReadDto
 	constructor(initialData?: Partial<RedemptionReadDto>) {
 		super()
 		Object.assign(this, initialData)

@@ -1,6 +1,6 @@
 import { CompanyReadDto } from './companies-read'
 
-export class CounterpartyCompanyCreateDto {
+export class ClientCompanyCreateDto {
 	name = ''
 	company: CompanyReadDto | { id: number }
 }

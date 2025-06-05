@@ -1,6 +1,4 @@
 import { PartialType } from '@nestjs/mapped-types'
-import { CounterpartyUnitCreateDto } from './counterparty-units-create'
+import { ClientUnitCreateDto } from './client-units-create'
 
-export class CounterpartyUnitUpdateDto extends PartialType(
-	CounterpartyUnitCreateDto,
-) {}
+export class ClientUnitUpdateDto extends PartialType(ClientUnitCreateDto) {}

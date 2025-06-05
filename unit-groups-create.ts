@@ -1,6 +1,6 @@
-import { CounterpartyCompanyReadDto } from './counterparty-companies-read'
+import { ClientCompanyReadDto } from './client-companies-read'
 
 export class UnitGroupCreateDto {
 	name: string = ''
-	counterpartyCompany: CounterpartyCompanyReadDto | { id: number }
+	clientCompany: ClientCompanyReadDto | { id: number }
 }

@@ -1,7 +1,7 @@
-import { CounterpartyUnitReadDto } from './counterparty-units-read'
+import { ClientUnitReadDto } from './client-units-read'
 
 export class PriceCreateDto {
 	date: Date = new Date()
-	counterpartyUnit?: CounterpartyUnitReadDto | { id: number }
+	clientUnit?: ClientUnitReadDto | { id: number }
 	comment = ''
 }

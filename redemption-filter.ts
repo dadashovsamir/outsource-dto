@@ -1,5 +1,5 @@
-import { CounterpartyCompanyReadDto } from './counterparty-companies-read'
-import { CounterpartyUnitReadDto } from './counterparty-units-read'
+import { ClientCompanyReadDto } from './client-companies-read'
+import { ClientUnitReadDto } from './client-units-read'
 import { RedemptionTypeReadDto } from './redemption-types-read'
 import { UnitPositionReadDto } from './unit-positions-read'
 import { WorkParamReadDto } from './work-params-read'
@@ -12,8 +12,8 @@ export class RedemptionFilterDto {
 	periodEnd: string = ''
 	worker: WorkerReadDto[] | { id: number }[] = []
 	workParamsWorker: WorkParamReadDto[] | { id: number }[] = []
-	counterpartyCompany: CounterpartyCompanyReadDto[] | { id: number }[] = []
-	counterpartyUnit: CounterpartyUnitReadDto[] | { id: number }[] = []
+	clientCompany: ClientCompanyReadDto[] | { id: number }[] = []
+	clientUnit: ClientUnitReadDto[] | { id: number }[] = []
 	redemptionType: RedemptionTypeReadDto[] | { id: number }[] = []
 	unitPosition: UnitPositionReadDto[] = []
 }
